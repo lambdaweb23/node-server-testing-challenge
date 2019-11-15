@@ -5,8 +5,8 @@ const getFavorites = () => {
     return db("favorites");
 }
 
-const addFavorite = (item) => {
-    return db("favorites").insert(item)
+const addFavorite = (favorite) => {
+    return db("favorites").insert(favorite)
 }
 
 module.exports = {
